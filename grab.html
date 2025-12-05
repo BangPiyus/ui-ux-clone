@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grab Style UI</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grab Style UI with Feather Icons</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body class="bg-gray-100">
@@ -13,7 +14,7 @@
   <div class="bg-gradient-to-r from-green-400 to-teal-400 p-4 rounded-b-3xl pb-10">
       <div class="flex items-center justify-between">
           <button class="w-10 h-10 bg-white rounded-xl flex items-center justify-center">
-              🔍
+              <i data-feather="search" class="text-gray-600"></i>
           </button>
 
           <div class="flex-1 mx-3">
@@ -31,46 +32,63 @@
 
       <!-- GRID MENU -->
       <div class="grid grid-cols-4 gap-4 -mt-12">
-          <!-- Item -->
+
           <div class="text-center">
-              <div class="bg-green-100 p-4 rounded-xl text-green-600">🍔</div>
+              <div class="bg-green-100 p-4 rounded-xl text-green-600 flex justify-center">
+                  <i data-feather="coffee"></i>
+              </div>
               <p class="text-sm mt-1">Food</p>
           </div>
 
           <div class="text-center">
-              <div class="bg-green-100 p-4 rounded-xl text-green-600">🛵</div>
+              <div class="bg-green-100 p-4 rounded-xl text-green-600 flex justify-center">
+                  <i data-feather="navigation"></i>
+              </div>
               <p class="text-sm mt-1">Bike</p>
           </div>
 
           <div class="text-center">
-              <div class="bg-green-100 p-4 rounded-xl text-green-600">🚗</div>
+              <div class="bg-green-100 p-4 rounded-xl text-green-600 flex justify-center">
+                  <i data-feather="truck"></i>
+              </div>
               <p class="text-sm mt-1">Car</p>
           </div>
 
           <div class="text-center">
-              <div class="bg-green-100 p-4 rounded-xl text-green-600">📦</div>
+              <div class="bg-green-100 p-4 rounded-xl text-green-600 flex justify-center">
+                  <i data-feather="package"></i>
+              </div>
               <p class="text-sm mt-1">Express</p>
           </div>
 
           <div class="text-center">
-              <div class="bg-green-100 p-4 rounded-xl text-green-600">💡</div>
+              <div class="bg-green-100 p-4 rounded-xl text-green-600 flex justify-center">
+                  <i data-feather="smartphone"></i>
+              </div>
               <p class="text-sm mt-1">Pulsa</p>
           </div>
 
           <div class="text-center">
-              <div class="bg-green-100 p-4 rounded-xl text-green-600">🛒</div>
+              <div class="bg-green-100 p-4 rounded-xl text-green-600 flex justify-center">
+                  <i data-feather="shopping-bag"></i>
+              </div>
               <p class="text-sm mt-1">Mart</p>
           </div>
 
           <div class="text-center">
-              <div class="bg-green-100 p-4 rounded-xl text-green-600">📄</div>
+              <div class="bg-green-100 p-4 rounded-xl text-green-600 flex justify-center">
+                  <i data-feather="clipboard"></i>
+              </div>
               <p class="text-sm mt-1">Jastip</p>
           </div>
 
           <div class="text-center">
-              <div class="bg-green-100 p-4 rounded-xl text-green-600">🔘</div>
+              <div class="bg-green-100 p-4 rounded-xl text-green-600 flex justify-center">
+                  <i data-feather="grid"></i>
+              </div>
               <p class="text-sm mt-1">All</p>
           </div>
+
       </div>
 
       <!-- Services Row -->
@@ -105,18 +123,27 @@
   <!-- BOTTOM NAV -->
   <div class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg py-2 flex justify-around text-sm">
       <div class="flex flex-col items-center">
-          🏠 <span>Home</span>
+          <i data-feather="home"></i>
+          <span>Home</span>
       </div>
       <div class="flex flex-col items-center">
-          💳 <span>Payment</span>
+          <i data-feather="credit-card"></i>
+          <span>Payment</span>
       </div>
       <div class="flex flex-col items-center">
-          📜 <span>Activity</span>
+          <i data-feather="file-text"></i>
+          <span>Activity</span>
       </div>
       <div class="flex flex-col items-center">
-          💬 <span>Messages</span>
+          <i data-feather="message-circle"></i>
+          <span>Messages</span>
       </div>
   </div>
+
+  <!-- INIT FEATHER -->
+  <script>
+      feather.replace();
+  </script>
 
 </body>
 </html>
